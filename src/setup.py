@@ -7,4 +7,9 @@ setup(
     install_requires=[
         "click==8.1.3",
     ],
+    extras_require={
+        "dev": [
+            "pytest==7.2.1",
+        ],
+    }
 )

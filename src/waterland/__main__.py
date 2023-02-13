@@ -1,10 +1,5 @@
-import click
-
-
-@click.command()
-def main():
-    click.echo("Hello, from WaterLand!")
+import waterland.cli
 
 
 if __name__ == "__main__":
-    main()
+    waterland.cli.main()
