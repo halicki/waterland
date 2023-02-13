@@ -1,10 +1,16 @@
 import click
 
+import waterland.algorithm
+
 
 @click.command()
 @click.argument("file", type=click.Path(exists=True))
 def main(file):
-    click.echo("100")
+    with open(file) as f:
+        grid = waterland.algorithm.get_lists(f)
+
+    count = waterland.algorithm.count_islands(grid)
+    click.echo(count)
 
 
 if __name__ == "__main__":
