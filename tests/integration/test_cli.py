@@ -20,5 +20,5 @@ def test_invoke_with_filename_but_no_file_present_returns_error():
 
 def test_invoke_with_filename_and_file_present_returns_success():
     runner = CliRunner()
-    result = runner.invoke(main, ["./tests/integration/fixtures/valid_file.txt"])
+    result = runner.invoke(main, ["./tests/fixtures/valid_file.txt"])
     assert result.exit_code == 0
