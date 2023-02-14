@@ -1,4 +1,4 @@
-from waterland.algorithm import get_grid
+from waterland.conversion import get_grid
 
 
 def test_get_lists_returns_a_list_of_lists_of_integers(grid):
