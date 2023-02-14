@@ -1,8 +1,8 @@
-from click.testing import CliRunner
-import waterland.cli
+import subprocess
 
 
 def test_pepita_grid():
-    cli = CliRunner()
-    result = cli.invoke(waterland.cli.main, ["./tests/fixtures/pepita.txt"])
-    assert result.output == "1\n"
+    result = subprocess.run(
+        ["python", "-m", "waterland", "tests/fixtures/pepita.txt"], capture_output=True
+    )
+    assert result.stdout == b"1\n"
