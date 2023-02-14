@@ -13,22 +13,22 @@
 
 1. Clone the repository.
 
-```bash
-git clone <https://github.com/halicki/waterland.git>
-```
+    ```bash
+    git clone <https://github.com/halicki/waterland.git>
+    ```
 
 1. Setup and activate virtualenv.
 
-```bash
-virtualenv -p python3 venv
-source venv/bin/activate
-```
+    ```bash
+    virtualenv -p python3 venv
+    source venv/bin/activate
+    ```
 
 1. Install the package.
 
-```bash
-pip install -e src
-```
+    ```bash
+    pip install -e src
+    ```
 
 ## Usage
 
